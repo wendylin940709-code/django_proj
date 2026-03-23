@@ -1,0 +1,9 @@
+# pages/urls.py
+from django.urls import path
+
+from .views import home_page_view, about_page_view
+
+urlpatterns = [
+    path("about/", about_page_view),
+    path("", home_page_view), #網址結束後是空的就call home_page_view這個function
+]
