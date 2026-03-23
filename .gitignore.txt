@@ -1,0 +1,15 @@
+# 忽略所有名為 .venv 的資料夾
+.venv/
+venv/
+ENV/
+
+# 忽略 Python 編譯產生的暫存檔
+__pycache__/
+*.pyc
+
+# 忽略 Django 本地資料庫（如果你不想上傳資料的話）
+db.sqlite3
+
+# 忽略 IDE 設定（例如 VS Code 或 PyCharm）
+.vscode/
+.idea/
