@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% for post in posts %} 
+    <div class="post-entry">
+        <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+        <!-- 傳pk給urls.py，urls.py再傳給view.py，view.py辨識完之後在丟回去post_detail.html
+         -->
+        <p>{{ post.body }}</p>
+    </div>
+{% endfor %}
+{% endblock content %}
